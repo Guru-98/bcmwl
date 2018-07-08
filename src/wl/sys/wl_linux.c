@@ -111,6 +111,10 @@ static void wl_dpc_rxwork(struct wl_task *task);
 
 static int wl_reg_proc_entry(wl_info_t *wl);
 
+#ifndef init_MUTEX
+#define init_MUTEX(sem) sema_init(sem, 1)
+#endif
+
 static int wl_linux_watchdog(void *ctx);
 static
 int wl_found = 0;
