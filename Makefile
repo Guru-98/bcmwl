@@ -132,6 +132,8 @@ EXTRA_CFLAGS       += -I$(src)/src/wl/sys -I$(src)/src/wl/phy -I$(src)/src/wl/pp
 EXTRA_CFLAGS       += -I$(src)/src/shared/bcmwifi/include
 EXTRA_CFLAGS       += -DBCMDBG_ASSERT -DBCMDBG_ERR
 
+EXTRA_CFLAGS       += -Wno-date-time
+
 EXTRA_LDFLAGS      := $(src)/lib/wlc_hybrid.o_shipped_$(BINARCH)
 
 KBASE              ?= /lib/modules/`uname -r`
