@@ -43,6 +43,11 @@
 #define EVENT_FLAGS(e) dtoh16((e)->flags)
 #define EVENT_STATUS(e) dtoh32((e)->status)
 
+#ifndef IEEE80211_BAND_2GHZ
+#define IEEE80211_BAND_2GHZ NL80211_BAND_2GHZ
+#define IEEE80211_BAND_5GHZ NL80211_BAND_5GHZ
+#endif
+
 #ifdef BCMDBG
 u32 wl_dbg_level = WL_DBG_ERR | WL_DBG_INFO;
 #else
