@@ -1,5 +1,8 @@
 {
     "files.associations": {
-        "linuxver.h": "c"
+        "linuxver.h": "c",
+        "mm.h": "c",
+        "mm_types.h": "c",
+        "uprobes.h": "c"
     }
 }

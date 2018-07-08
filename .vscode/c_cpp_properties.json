@@ -6,7 +6,7 @@
                 "${workspaceFolder}/**",
                 "/usr/src/linux-headers-4.15.0-24-generic/**"
             ],
-            "defines": ["USE_CFG80211"],
+            "defines": ["USE_CFG80211","__KERNEL__","BCMDBG_ASSERT","BCMDBG_ERR"],
             "compilerPath": "/usr/bin/gcc",
             "cStandard": "c11",
             "cppStandard": "c++17",
